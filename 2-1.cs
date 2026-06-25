@@ -1,0 +1,24 @@
+﻿using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite o primeiro numero: ");
+        double n1 = double.Parse(Console.ReadLine());
+
+        Console.Write("Digite o segundo numero: ");
+        double n2 = double.Parse(Console.ReadLine());
+
+        if (n1 > n2)
+        {
+            Console.Write("O maior e: ");
+            Console.WriteLine(n1);
+        }
+        else
+        {
+            Console.Write("O maior e: ");
+            Console.WriteLine(n2);
+        }
+    }
+}

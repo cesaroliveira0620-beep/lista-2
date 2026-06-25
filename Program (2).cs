@@ -1,0 +1,58 @@
+﻿using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite o valor de A: ");
+        double a = double.Parse(Console.ReadLine());
+
+        Console.Write("Digite o valor de B: ");
+        double b = double.Parse(Console.ReadLine());
+
+        Console.Write("Digite o valor de C: ");
+        double c = double.Parse(Console.ReadLine());
+    
+        if (a + b > c)
+        {
+            if (a + c > b)
+            {
+                if (b + c > a)
+                {               
+                    double quadradoA = a * a;
+                    double quadradoB = b * b;
+                    double quadradoC = c * c;
+                  
+                    if (quadradoA == quadradoB + quadradoC)
+                    {
+                        Console.WriteLine("Formam um triangulo retangulo");
+                    }
+                    else if (quadradoB == quadradoA + quadradoC)
+                    {
+                        Console.WriteLine("Formam um triangulo retangulo");
+                    }
+                    else if (quadradoC == quadradoA + quadradoB)
+                    {
+                        Console.WriteLine("Formam um triangulo retangulo");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Formam um triangulo, mas nao e retangulo");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Nao formam um triangulo");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Nao formam um triangulo");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Nao formam um triangulo");
+        }
+    }
+}
